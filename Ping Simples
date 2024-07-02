@@ -1,0 +1,3 @@
+# importa a lib scapy import scapy.all as scapy 
+# coloque aqui o endereco IP que deseja pingar ip_ping = "XXX.XXX.XXX.XXX" 
+# executa a funcao sr1 scapy.sr1(scapy.IP(dst=ip_ping)/scapy.ICMP(), timeout=3)
