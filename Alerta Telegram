@@ -1,0 +1,10 @@
+# importa a lib requests import requests
+# coloque aqui o token do seu bot do telegram
+TOKEN = "XXXXXXXXXXX"
+# coloque aqui o id do chat do seu bot do telegram 
+chat_id = "XXXXXXXXXX"
+# mensagem a ser enviada para o telegram
+message = "Teste de alerta"
+# url da api de envio de mensagem do telegram url =
+f"https://api.telegram.org/bot{TOKEN}/sendMessage?chat_id={chat_id}&te xt={message}"
+# acessa a url e envia a mensagem requests.get(url)
