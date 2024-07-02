@@ -1,0 +1,45 @@
+from ti_draw import *
+
+ 
+
+# (0,0) is in top left corner of screen
+
+# Let's draw some circles and squares
+
+# Circle with center at (50,50) and radius 40
+
+draw_circle(50,50,40)
+
+ 
+
+# Set color to red (255,0,0) and fill a rectangle of
+
+# of width 180, height 80 with top left corner at
+
+# (100,100)
+
+set_color(255,0,0)
+
+fill_rect(100,100,180,80)
+
+ 
+
+# Set color to green and pen style to "thin"
+
+# and "dotted".
+
+# Then, draw a circle with center at (200,100)
+
+# and radius 40
+
+set_color(0,255,0)
+
+set_pen("thin","dotted")
+
+draw_circle(200,100,40)
+
+ 
+
+set_color(0,0,0)
+
+draw_text(20,200,"Press Enter to exit")
