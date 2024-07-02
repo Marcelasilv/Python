@@ -1,0 +1,13 @@
+# Define the examination schedule
+exam_schedule = {
+  "start_date": "2022-05-01",
+  "end_date": "2022-05-10"
+}
+
+# Function to display the examination schedule
+def display_exam_schedule(schedule):
+  print("The examination starts on: ", schedule["start_date"])
+  print("The examination ends on: ", schedule["end_date"])
+
+# Call the function with the exam_schedule
+display_exam_schedule(exam_schedule)
