@@ -1,0 +1,71 @@
+#========== Import Section ==========
+
+from ti_hub import *
+
+from math import *
+
+from random import *
+
+from time import sleep
+
+from ti_plotlib import text_at,cls
+
+from ti_system import get_key
+
+#======== End of Import Section =======
+
+ 
+
+print("Connect the TI-Innovator Hub and hit 'enter'")
+
+input()
+
+print("Blinking the RGB LED for 4 seconds")
+
+# Set the RGB LED on the Hub to purple
+
+color.rgb(255,0,255)
+
+ 
+
+# Blink the LED 2 times a second for 4 seconds
+
+color.blink(2,4)
+
+ 
+
+sleep(5)
+
+ 
+
+print("The brightness sensor reading is: ", brightness.measurement())
+
+ 
+
+# Generate 10 random colors for the RGB LED
+
+# Play a tone on the Hub based on the random
+
+# color
+
+print("Generate 10 random colors on the Hub & play a tone")
+
+for i in range(10):
+
+••r=randint(0,255)
+
+••b=randint(0,255)
+
+••g=randint(0,255)
+
+••color.rgb(r,g,b)
+
+••sound.tone((r+g+b)/3,1)
+
+••sleep(1)
+
+ 
+
+color.off()
+
+Envie comentários para a equip
