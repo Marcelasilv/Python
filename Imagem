@@ -1,0 +1,27 @@
+# Image Processing
+
+#================================
+
+from ti_image import *
+
+from ti_draw import *
+
+#================================
+
+ 
+
+# Load and show the 'manhole_cover' image
+
+# It's in a Notes app
+
+# Draw a circle on top
+
+im1=load_image("manhole_cover")
+
+im1.show_image(0,0)
+
+set_color(0,255,0)
+
+set_pen("thick","dashed")
+
+draw_circle(140,110,100)
